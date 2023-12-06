@@ -5,13 +5,12 @@ import {
   Text,
   View,
 } from "react-native";
+import Main from "./src/components/Main";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <TouchableNativeFeedback onPress={() => Alert.alert("toque texto")}>
-        <Text>chau mundo!</Text>
-      </TouchableNativeFeedback>
+      <Main />
     </View>
   );
 }
