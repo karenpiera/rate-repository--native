@@ -9,11 +9,11 @@ const RepositoryItemHeader = props => (
     <View style={{ paddingRight: 10 }}>
       <Image style={styles.image} source={{ uri: props.ownerAvatarUrl }} />
     </View>
-    <View style={{ flex: -10 }}>
+    <View style={{ flex: -10, justifyContent: "center" }}>
       <StyledText fontSize="subheading" fontWeight="bold">
         {props.fullName}
       </StyledText>
-      <StyledText>Description: {props.description} </StyledText>
+      <StyledText color="primary">Description: {props.description} </StyledText>
       <StyledText style={styles.language}> {props.language} </StyledText>
     </View>
   </View>
@@ -30,13 +30,15 @@ const styles = StyleSheet.create({
   container: {
     padding: 20,
     paddingBottom: 5,
-    paddingTop: 5,
+    paddingTop: 35,
   },
   language: {
     padding: 4,
     color: theme.colors.white,
     backgroundColor: theme.colors.primary,
     alignSelf: "flex-start",
+    marginTop: 5,
+    marginBottom: 5,
     borderRadius: 5,
     overflow: "hidden",
   },
