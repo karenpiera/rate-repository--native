@@ -7,7 +7,7 @@ import theme from "../theme";
 const styles = StyleSheet.create({
   container: {
     backgroundColor: theme.appBar.primary,
-    paddingTop: Constants.statusBarHeight + 10,
+    paddingTop: Constants.statusBarHeight,
     paddingBottom: 10,
     paddingLeft: 10,
   },
